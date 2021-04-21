@@ -1,0 +1,8 @@
+Flask-Migrate
+Flask
+Flask-Bootstrap
+Flask-Mail
+Flask-Moment
+Flask-SQLAlchemy
+Flask-Login
+Flask-PageDown
