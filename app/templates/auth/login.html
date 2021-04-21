@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Flask Shop - 登入{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>登入</h1>
+</div>
+<div class="col-md-4">
+    {{ wtf.quick_form(form) }}
+    <br>
+    <a class="btn btn-default" href="{{ url_for('auth.password_reset_request') }}">忘記密碼</a>
+    <a class="btn btn-default" href="{{ url_for('auth.register') }}">註冊</a>
+</div>
+{% endblock %}
